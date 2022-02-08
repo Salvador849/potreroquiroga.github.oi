@@ -1,0 +1,352 @@
+:root{
+    --negro:#000;
+    --secundario:#0097A7;
+    --blanco:#fff;
+    --secundariosky:#49b0bb;
+    --gris:#757575;
+    --grisClaro:#DFE9F3;
+    --primario:#FFC107;
+}
+html{
+    box-sizing:border-box;
+    font-size: 62.5%;
+    
+    
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    
+   
+}
+*,*::before,*::after{
+
+    box-sizing:inherit;
+}
+
+body{
+    font-size: 1.6rem;
+    background: rgb( 0 0 0 /3%);
+    
+   
+}
+h1{
+font-size: 3.8rem;
+}
+h2{
+    
+    font-size: 2.8rem;
+}
+h3{
+    font-size: 1.8rem;
+
+}
+h1,h2,h3{
+    text-align: center;
+}
+
+
+/* parte header */
+header{
+    background: var(--negro);
+    padding:1rem;
+    max-width: 100%;
+}
+.header_enlace{
+    text-decoration:none;
+    color: aliceblue;
+    font-family: 'Staatliches', cursive;
+    font-weight: 700;
+}
+.menu{
+    max-width:100%;
+    background:var(--secundario);
+}
+ .menu_principal{
+    max-width:90rem;
+    margin:auto;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    background: var(--secundario);
+    text-align: center;
+} 
+/* .menu_proncipal_enlace{
+    padding:1rem;
+    text-decoration: none;
+    font-size: 2rem;
+    font-family: 'Staatliches', cursive;
+    font-weight: 400;
+    color: var(--blanco);
+} */
+ .menu_proncipal_enlace{
+    padding:1rem;
+    text-decoration: none;
+    font-size: 2rem;
+    font-family: 'Staatliches', cursive;
+    font-weight: 400;
+    color: var(--blanco);
+    display: block;
+} 
+.menu_proncipal_enlace:hover{
+    text-decoration: underline;
+    /* background:var(--secundariosky) ; */
+    box-shadow: -2px 4px 48px -1px rgba(0,0,0,0.75);
+-webkit-box-shadow: -2px 4px 48px -1px rgba(0,0,0,0.75);
+-moz-box-shadow: -2px 4px 48px -1px rgba(0,0,0,0.75);
+    color: var(--negro);
+}
+
+.banner{
+    background: url(../img/banner.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45rem;
+    /* max-width: 100%; */
+    /* background-size:100vw; */
+    /* background-size:100vh; */
+    /* width:min(60rem,100%); */
+}
+.banner_contenido{
+    background-color: rgb( 0 0 0 /46%);
+    width: 100%;
+    height: 100%;
+   
+
+}
+.banner_contenido{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.banner_contenido h2{
+    color:rgb(169, 231, 24);
+    font-size: 4rem;
+}
+.ubicacion{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    
+}
+.ubicacion p{
+    color:rgb(169, 231, 24);
+    margin-bottom:5rem;
+}
+.btn_boton{
+background:rgb(169, 231, 24);
+padding:1rem 2rem;
+text-decoration: none;
+border-radius: 2rem;
+font-size: 2rem;
+font-family: 'Staatliches', cursive;
+color: #fff;
+
+}
+.btn_boton:hover{
+    background:rgb(112, 143, 40);
+}
+.contenido_ganados{
+    max-width:120rem;
+    margin: auto;
+    box-shadow: 1px 1px 18px 2px rgba(0,0,0,0.75);
+-webkit-box-shadow: 1px 1px 18px 2px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 1px 18px 2px rgba(0,0,0,0.75);
+margin-top: 3rem;
+border-radius: 2rem;
+padding: 1rem;
+background: white;
+
+}
+.contenido_ganados h2{
+    padding: 5rem 0;
+    font-size: 3rem;
+    font-family: 'Staatliches', cursive;
+    font-weight: 700;
+}
+
+.img_100{
+    max-width:100%;
+
+}
+ .ganados{
+    
+    /* display:grid;
+    grid-template-columns:repeat(3,1fr);
+    column-gap:1rem; */
+    /* padding: 2rem; */
+
+} 
+.ganado{
+    margin-bottom:4rem;
+}
+.btn_ganado{
+    background:rgb(169, 231, 24);
+padding:0.5rem 1.5rem;
+text-decoration: none;
+border-radius: 2rem;
+font-size: 2rem;
+font-family: 'Staatliches', cursive;
+color: #fff;
+margin-top:1rem;
+display: inline-block;
+}
+.btn_ganado:hover{
+    background:rgb(112, 143, 40);
+}
+
+
+/* ------------servicios--------------- */
+
+/* .servicios{
+
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    column-gap: 2rem;
+} */
+.servicio h3{
+    padding: 2rem;
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: 'Staatliches', cursive;
+}
+
+/* formulario */
+.formulario{
+    width: min(60rem,100%);
+    margin: auto;
+    background:var(--gris);
+    border-radius: 1rem;
+    padding: 2rem;
+}
+fieldset{
+    border: 0px;
+}
+legend{
+    text-align: center;
+    padding: 2rem;
+    font-size: 3rem;
+    color: var(--primario);
+    font-family: 'Staatliches', cursive;
+
+}
+label{
+    max-width: 100%;
+    color: var(--blanco);
+    font-size: 2rem;
+    font-weight:700;
+}
+.campo_text{
+   width: 100%;
+   padding: 1rem;
+   border-radius: 0.5rem;
+   border: 0;
+   outline: 0;
+}
+/* .campos{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 1rem;
+}
+.campo:nth-child(3){
+    grid-column: 1/3;
+} */
+.submti_btn{
+    display: flex;
+    justify-content:flex-end;
+   
+}
+.btn_boton_boton{
+    width: 100%;
+}
+.submit_Enviar{
+    padding: 1rem 2rem;
+    margin: 1rem;
+    background:rgb(169, 231, 24);
+    border: 0;
+    outline: 0;
+    border-radius:1rem;
+}
+.submit_Enviar:hover{
+    background:rgb(198, 236, 109);
+    color: #fff;
+}
+/* mapa */
+
+.mapa_Rancho_Quiroga{
+    max-width: 90rem;
+    margin: auto;
+   
+    
+}
+.mapa_k{
+    width: 100%;
+}
+.footer_p{
+    text-align:center;
+}
+
+/* queries */
+
+/* menu  queries */
+@media  only screen  and (min-width:768px) {
+    .menu_principal{
+        max-width:90rem;
+        margin:auto;
+        display: flex;
+        justify-content: space-between;
+        background: var(--secundario);
+    }
+    .menu_proncipal_enlace{
+        padding:1rem;
+        text-decoration: none;
+        font-size: 2rem;
+        font-family: 'Staatliches', cursive;
+        font-weight: 400;
+        color: var(--blanco);
+    }
+
+    .ganados{
+    
+        display:grid;
+        grid-template-columns:repeat(3,1fr);
+        column-gap:1rem;
+    
+    }
+    .servicios{
+
+        display:grid;
+        grid-template-columns:repeat(2,1fr);
+        column-gap: 2rem;
+    }
+
+    .campos{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 1rem;
+    }
+    .campo:nth-child(3){
+        grid-column: 1/3;
+    }
+
+    .btn_boton_boton{
+        display: flex;
+        width:auto;
+
+    }
+
+}
+
+.redes_Sociales{
+    width:min(50rem,100%);
+    margin: auto;
+    /* background: red; */
+}
+.redes_redes{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+
+}
+.rede{
+    text-align: center;
+}
